@@ -37,9 +37,9 @@ body {
 
 /*header*/
 .header {
-  border: 1px solid #ececec;
-  border-left: none;
-  border-right: none;
+  border-bottom: 1px solid #ececec;
+  bottom: 0;
+  left: 0;
 }
 
 /* Propiedad icono en page Portfolio*/
@@ -48,15 +48,14 @@ body {
 }
 
 .portfolio-page .nav__contact {
-  column-gap: 34px;
+  column-gap: 30px;
   font-style: normal;
   font-weight: 500;
   position: absolute;
   display: flex;
   right: 15px;
-  top: 37.5%; /* Ajustar según el diseño */
+  top: 37%; /* Ajustar según el diseño */
   transform: translateY(-50%);
-  justify-content:space-around;
 }
 
 .nav {
