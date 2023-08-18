@@ -16,33 +16,19 @@ body {
   color: var(--color-uno);
   background-color: var(--color-tres);
   letter-spacing: 0.03em;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.header-logo.link {
-  font-family: 'Raleway', sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--color-studio);
-  text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-right: 93px;
-  margin: auto;
-  position: relative; /* Ajusta el valor según sea necesario - lados*/
-  left: -10px;
-}
-
-/* Propiedades CSS para icono*/
-.header-contacts.list .email-tel.link img {
-  margin-right: 7px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .list {
-  margin: 0;
   list-style-type: none;
   display: flex;
-  margin-right: 50px;
 }
 
 .link {
@@ -51,81 +37,82 @@ body {
 
 /*header*/
 .header {
-  width: 1300px;
-  height: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0;
   border: 1px solid #ececec;
-  position: relative; /* Ajusta el valor según sea necesario - lados*/
-  left: 10px;
+  border-left: none;
+  border-right: none;
 }
 
-.container {
-  display: flex;
-  background: var(--color-tres);
+/* Propiedad icono en page Portfolio*/
+.nav__contact img {
+  margin-right: 5px;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.menu .list {
-  position: relative;
-  left: -100px; /* Ajusta el valor según sea necesario */
-}
-
-/*  ===================> recordar <=======  */
-section {
-  padding-bottom: 3px;
-  padding-top: 3px;
-}
-
-.stud-port,
-.stud-port:visited {
-  font-family: 'Roboto', sans-serif; /* Usar la fuente Roboto */
+.portfolio-page .nav__contact {
+  column-gap: 34px;
   font-style: normal;
-  line-height: 1.1;
+  font-weight: 500;
+  position: absolute;
+  display: flex;
+  right: 15px;
+  top: 37.5%; /* Ajustar según el diseño */
+  transform: translateY(-50%);
+  justify-content:space-around;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+  position: relative;
+}
+
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17;
+  color: var(--color-studio);
+  margin-right: 93px;
+}
+
+.nav__list {
+  font-style: normal;
+  margin-right: 344px;
+  display: flex;
+  column-gap: 50px;
+}
+
+.nav__contact {
+  font-style: normal;
+  font-weight: 500;
+  column-gap: 50px;
+  position: absolute;
+  display: flex;
+  right: 15px;
+  top: 37%;
+  transform: translateY(-50%);
+}
+
+.clic-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--color-dos);
   font-weight: 500;
-  margin: auto;
-  margin-right: 50px;
-  text-decoration: none; /* Agregar estilo sin subrayado */
+  text-decoration: none;
+  display: inline-block;
 }
 
-.stud-port.link:hover,
-.stud-port.link:focus,
-.stud-port.link:active {
+.clic-button.link:hover,
+.clic-button.link:active {
   color: var(--color-studio);
   cursor: pointer;
 }
 
-.stud-port.link.current {
+.clic-button.link.current {
   color: var(--color-studio);
-}
-
-.header-contacts {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
-  position: relative;
-  right: -40px;
-}
-
-.header-contacts a {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: var(--color-uno);
-  margin-right: 50px;
-  margin-left: auto;
 }
 
 .email-tel.link {
@@ -149,20 +136,24 @@ section {
 }
 
 /*Tittle*/
+.hero .container {
+  background: var(--color-background);
+}
+
 .hero-title {
-  text-align: center;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
   font-style: normal;
-  line-height: 1.3;
+  line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-tres);
+  background: var(--color-background);
   display: block;
   margin: auto;
-  margin-top: 180px;
-  margin-left: 280px;
+  margin-top: 30px;
   padding-bottom: 30px;
   justify-content: center;
 }
@@ -182,7 +173,7 @@ section {
   width: 261px;
   height: 50px;
   margin-top: 10px;
-  margin-left: 495px;
+  margin-left: 465px;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
@@ -193,7 +184,6 @@ section {
   letter-spacing: 0.06em;
   color: var(--color-tres);
   background: var(--color-studio);
-  padding: 10px, 32px, 10px, 32px;
   gap: 10px;
   padding-top: 10px;
   padding-left: 10px;
@@ -217,6 +207,7 @@ section {
   padding: 0px;
   margin-top: 80px;
   margin-left: 50px;
+  column-gap: 30px;
 }
 
 .develop-title {
@@ -225,12 +216,10 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-dos);
-  margin-right: 30px;
   margin: 0 auto;
 }
 
 .develop-block {
-  width: 1180px;
   height: 122px;
   margin-top: 775px;
   margin-left: 205px;
@@ -249,8 +238,12 @@ section {
 }
 
 /*Areas de Desarrollo*/
+.activity .container {
+  width: 1200px;
+  margin: auto;
+}
+
 .activity {
-  width: 1173.16px;
   height: 425px;
   color: var(--color-dos);
   font-style: normal;
@@ -258,8 +251,6 @@ section {
   line-height: 1.1;
   text-align: center;
   padding-top: 94px;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
   margin-bottom: 94px;
@@ -279,20 +270,12 @@ section {
 .activity-list {
   list-style-type: none;
   display: flex;
-  margin: 0px;
-  padding: 0px;
+  flex-wrap: wrap;
+  column-gap: 30px;
   justify-content: center;
-  width: 1200px;
   height: 648px;
-  border: 0;
-}
-
-.office {
-  margin-right: 30.2px;
-}
-
-.design {
-  margin-right: 23.42px;
+  margin: 0;
+  padding: 0;
 }
 
 /* --equipo-- */
@@ -300,44 +283,38 @@ section {
   color: var(--color-dos);
   font-style: normal;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.18;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 188px;
-  margin-bottom: 0;
   justify-content: center;
+  padding-bottom: 120px;
+  background: var(--color-cuatro);
 }
 
 .team-title {
-  width: 263px;
+  text-align: center;
+  font-style: normal;
   height: 42px;
   margin-top: 100px;
-  margin-left: 15px;
+  margin-bottom: 80px;
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.1;
-  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--color-dos);
 }
 
 .team-list {
-  list-style-type: none;
-  width: 1177px;
-  height: 550px;
+  height: 330px;
   flex-grow: 1;
-  margin-top: 50px;
-  margin-left: 60px;
+  column-gap: 37px;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
-}
-
-.development {
-  font-style: normal;
-  line-height: 1.18;
-  background: var(--color-cuatro);
+  justify-content: space-around;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .name {
@@ -366,11 +343,11 @@ section {
   width: 270px;
   height: 368px;
   margin-top: 0;
+  gap: 30px;
   background: var(--color-tres);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 20px;
   transition: all ease 0.3s; /* función escalar imagen */
 }
 
@@ -511,6 +488,12 @@ section {
 }
 
 /*footer*/
+.footer .container {
+  background: var(--color-background);
+  width: 1200px;
+  margin: auto;
+}
+
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -519,28 +502,23 @@ section {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
-  padding-right: 93px;
   margin: auto;
-  margin-left: 70px;
 }
 
 .footer {
-  padding-left: 15px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--color-background);
-  width: 1300px;
   height: 252px;
-  margin-top: -94px;
-  background: var(--color-background);
   align-items: center;
   position: relative; /* Ajusta el valor según sea necesario - lados*/
-  left: 10px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .footer-list {
   list-style: none;
+  padding: 0;
 }
 
 .info {
@@ -548,7 +526,6 @@ section {
   font-style: normal;
   line-height: 1.71;
   position: relative; /* Ajusta el valor según sea necesario - lados*/
-  left: 30px;
 }
 
 .link-button.address {
