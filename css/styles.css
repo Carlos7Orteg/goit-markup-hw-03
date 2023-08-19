@@ -55,7 +55,7 @@ body {
   position: absolute;
   display: flex;
   right: 15px;
-  top: 32px; /* Ajustar según el diseño */
+  top: 32%; /* Ajustar según el diseño */
   transform: translateY(-50%);
 }
 
@@ -86,9 +86,9 @@ body {
   display: flex;
   column-gap: 50px;
   top: 32px;
-  transform: translateY(-50%);
   height: 16px;
   padding-bottom: 32px;
+  transform: translateY(-50%);
 }
 
 .nav__contact {
@@ -98,8 +98,7 @@ body {
   position: absolute;
   display: flex;
   right: 15px;
-  transform: translateY(-50%);
-  top: 32px;
+  top: 32%;
   height: 16px;
   padding-bottom: 32px;
 }
@@ -399,8 +398,13 @@ body {
   margin: auto;
   padding-bottom: 50px;
   padding-top: 106px;
+<<<<<<< HEAD
   height: 73px;
   column-gap: 8px;
+=======
+  height: 73px;
+  column-gap: 8px;
+>>>>>>> f9fd5af7624163e8031ac0b69524923302950bbe
 }
 
 .list-sub {
