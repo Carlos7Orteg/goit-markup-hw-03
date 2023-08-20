@@ -167,7 +167,7 @@ body {
   background: var(--color-background);
   display: block;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 170px;
   padding-bottom: 30px;
   justify-content: center;
 }
@@ -176,7 +176,7 @@ body {
   background: var(--color-background);
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 180px;
+  padding-bottom: 150px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -186,7 +186,7 @@ body {
   font-style: normal;
   width: 261px;
   height: 50px;
-  margin-top: 10px;
+  margin-bottom: 140px;
   margin-left: 465px;
   border-radius: 4px;
   font-size: 16px;
@@ -267,7 +267,7 @@ body {
   padding-top: 94px;
   justify-content: space-between;
   margin: auto;
-  margin-bottom: 94px;
+  margin-bottom: 188px;
 }
 
 .title-h2 {
